@@ -1,0 +1,66 @@
+.image-block {
+    border-radius: 35px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    position: relative;
+    width: auto;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding-top: 50px;
+}
+  
+  
+  .image-block img {
+    max-width: 60%;
+    height: auto;
+    position: absolute;
+    top: -150px;
+    border-radius: 50%;
+    box-shadow: #3333338a 1px 1px 20px 8px;
+
+  }
+  
+  .image-block h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    color: #313131e3;
+  }
+  
+  .image-block p {
+    font-size: 16px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+  }
+  
+  .image-block button {
+    background-color: #a8a8a81c;
+    color: #fff;
+    margin: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-block button.liked {
+    background-color: red;
+  }
+  .cart-block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #dddddd85;
+    padding-top: 200px;
+  }
+  .btn-cnt {
+    display: flex;
+  }

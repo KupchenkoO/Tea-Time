@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  
+
 }
 
 .App-logo {
@@ -35,4 +36,121 @@
   to {
     transform: rotate(360deg);
   }
+}
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  margin: 5%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  transition: transform 0.3s;
+  display: none;
+}
+.gift-img {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gift-txt {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #8695aabf;
+  border-radius: 25px;
+  position: relative;
+}
+.gift-name {
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0px 4px 10px #000;
+  position: absolute;
+  top: 0;
+}
+.gift-ds {
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 0 0 6px #000000;
+  font-size: 15px;
+  padding: 15px;
+}
+.slide.active {
+  display: flex;
+}
+
+.slider-container img {
+  max-width: 70%;
+  height: auto;
+}
+.controls{
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+.controls button {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  filter: drop-shadow(1px 2px 3px rgb(0, 0, 0));
+  transition: 0.5s;
+}
+
+.btn-left:hover{
+  transform: translate(-5px);
+  transition: 0.5s;
+  filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
+}
+.btn-right:hover{
+  transform: translate(5px);
+  transition: 0.5s;
+  filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
+}
+.dots {
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #333;
+}
+.parallax-img {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  background-image:url(prlx.jpg)
 }
